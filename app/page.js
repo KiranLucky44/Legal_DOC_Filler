@@ -114,7 +114,10 @@ export default function Home() {
         {state === 'generating' && (
           <div className="step">
             <h2>Generating Document...</h2>
-            <div className="loading">Please wait while we generate your completed document.</div>
+            <div className="loading-container">
+              <div className="spinner"></div>
+              <div className="loading">Please wait while we generate your completed document</div>
+            </div>
           </div>
         )}
 
